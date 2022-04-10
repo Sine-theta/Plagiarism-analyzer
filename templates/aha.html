@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<title>Python plagiarism analyzer</title>
+<head> <link rel="stylesheet" href='/static/main.css' /></head>
+<body>
+<h2>Select file(s) to upload</h2><br>
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+<center>
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+	<p><input type="file" name="files[]" multiple="true" autocomplete="off" required>
+	</p>
+    </dl>
+    <p><input type="submit" value="Submit"></p>
+</form>
+</center>
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+
+<a href="https://youtu.be/dQw4w9WgXcQ" class="back-to-article" target="_blank">Don't click me</a>
+
+
+<hr>
+<h2><center>Learn, Leap, Lead</center><h2>
+<br>
+<h5>Section: O1 - CSE cyber Sekuurity
+</h5>
+
+<hr>
+<form method = "post" action="/result">
+	<input type="button" name="submit" value="UwU">
+<center>
+
+</center>
+</form>
+
+</body>
+</html>
